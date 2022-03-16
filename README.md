@@ -19,7 +19,7 @@ Node-RED image for Unified Comfort Panel, containing basic nodes for reading fil
     - [Data processing in Node-RED](#data-processing-in-node-red)
   - [Documentation](#documentation)
   - [Contribution](#contribution)
-  - [License](#license)
+  - [License & Legal Information](#license--legal-information)
 
 ## Requirements
 
