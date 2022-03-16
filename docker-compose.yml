@@ -1,0 +1,14 @@
+version: '2.4'
+services:
+  hmi-nodered:
+    image: 'nodered_ucp_edge:latest'
+    user: root
+    volumes:
+      - './publish/:/publish/'
+      - '/tmp/siemens/automation:/tempcontainer/'
+      - '/media/simatic:/media/simatic:ro,slave'
+      - './cfg-data/:/data'
+    mem_limit: 200mb
+    ports:
+      - '30501:1880'
+    restart: unless-stopped
