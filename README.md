@@ -5,24 +5,21 @@ Node-RED image for Unified Comfort Panel, containing basic nodes for reading fil
 
 - [edge-sharefile-unified](#edge-sharefile-unified)
   - [Table of Contents](#table-of-contents)
-  - [Install the App](#install-the-app)
-    - [Requirements](#requirements)
-    - [Download the App](#download-the-app)
-    - [Prerequisites](#prerequisites)
-    - [Load App on Unified Comfort Panels](#load-app-on-unified-comfort-panels)
-  - [Run the App](#run-the-app)
-  - [Extra Mapped Port for Additional Services](#extra-mapped-port-for-additional-services)
-  - [WinCC Unified Communication with OpenPipe Nodes](#wincc-unified-communication-with-openpipe-nodes)
-  - [Extra nodes in package.json](#extra-nodes-in-packagejson)
-  - [How the App is built from scratch](#how-the-app-is-built-from-scratch)
-    - [```package.json```](#packagejson)
-    - [```docker-compose.yml```](#docker-composeyml)
-    - [```Dockerfile```](#dockerfile)
-  - [Import in Edge App Publisher](#import-in-edge-app-publisher)
-  - [References](#references)
-  - [Release History](#release-history)
+  - [Requirements](#requirements)
+    - [Hardware Requirements](#hardware-requirements)
+    - [Software Requirements](#software-requirements)
+  - [Node-RED App](#node-red-app)
+    - [App download and installation](#app-download-and-installation)
+    - [Run the App](#run-the-app)
+    - [Extra nodes in ```package.json```](#extra-nodes-in-packagejson)
+  - [Application example](#application-example)
+    - [Overview](#overview)
+    - [Shared folder settings](#shared-folder-settings)
+    - [WinCC Unified TIA Portal Project Upload](#wincc-unified-tia-portal-project-upload)
+    - [Data processing in Node-RED](#data-processing-in-node-red)
+  - [Documentation](#documentation)
+  - [Contribution](#contribution)
   - [License](#license)
-  - [Contributing](#contributing)
 
 ## Requirements
 
@@ -36,11 +33,11 @@ In order to run this Edge App, the selected Edge System need to satisfy the foll
 |--------------------------------|-----------|
 | Available Working Memory (RAM) | >= 768 MB |
 
-#### Hardware Requirements
+### Hardware Requirements
 
 - The ```edge-node-red-smb-unified``` app is only compatible with **WinCC Unified Panels** devices that have **SIMATIC Edge** functionality enabled. For details on how to enable Edge functionality see chapter [Edge Enablement on Unified Comfort Panels](#edge-enablement-on-unified-comfort-panels).  
 
-#### Software Requirements
+### Software Requirements
 
 - The ```edge-node-red-smb-unified``` app requires **768MB** of **RAM** to run. The current limit of RAM available to Industrial Edge applications on WinCC Unified Panels devices is 768MB and for this reason no other Edge application can be running in parallel with the ```edge-node-red-smb-unified``` application.
 - The ```edge-node-red-smb-unified``` app requires an active and properly configured **WinCC Unified project** present on the WinCC Unified Panel device. For details on how to integrate the ```edge-node-red-smb-unified``` app into a new WinCC Unified project see chapter [WinCC Unified Configuration](#wincc-unified-configuration).
