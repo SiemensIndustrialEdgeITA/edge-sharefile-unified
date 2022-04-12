@@ -23,7 +23,7 @@ Node-RED image for Unified Comfort Panel, containing basic nodes for reading fil
 
 ## Requirements
 
-This application example comes with pre-builded ```edge-node-red-smb-unified_x.x.x.app``` package that can be installed specifically on Unified Comfort Panels that run SIMATIC Edge Runtime.
+This application example comes with pre-builded ```nodered_smb_fs_mail_sql_x.x.x.app``` package that can be installed specifically on Unified Comfort Panels that run SIMATIC Edge Runtime.
 
 > Before loading this application, check if the requirements below are satisfied by the selected Edge Device for installation.
 
@@ -35,18 +35,18 @@ In order to run this Edge App, the selected Edge System need to satisfy the foll
 
 ### Hardware Requirements
 
-- The ```edge-node-red-smb-unified``` app is only compatible with **WinCC Unified Panels** devices that have **SIMATIC Edge** functionality enabled. For details on how to enable Edge functionality see chapter [Edge Enablement on Unified Comfort Panels](#edge-enablement-on-unified-comfort-panels).  
+- The ```nodered_smb_fs_mail_sql``` app is only compatible with **WinCC Unified Panels** devices that have **SIMATIC Edge** functionality enabled. For details on how to enable Edge functionality see chapter [Edge Enablement on Unified Comfort Panels](#edge-enablement-on-unified-comfort-panels).  
 
 ### Software Requirements
 
-- The ```edge-node-red-smb-unified``` app requires **768MB** of **RAM** to run. The current limit of RAM available to Industrial Edge applications on WinCC Unified Panels devices is 768MB and for this reason no other Edge application can be running in parallel with the ```edge-node-red-smb-unified``` application.
-- The ```edge-node-red-smb-unified``` app requires an active and properly configured **WinCC Unified project** present on the WinCC Unified Panel device. For details on how to integrate the ```edge-node-red-smb-unified``` app into a new WinCC Unified project see chapter [WinCC Unified Configuration](#wincc-unified-configuration).
-- WinCC Unified and the ```edge-node-red-smb-unified``` app require to use the Engineering software **TIA Portal V17** - [SIOS download link](https://support.industry.siemens.com/cs/document/109784440/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v17-trial-download?dti=0&lc=en-IT).
+- The ```nodered_smb_fs_mail_sql``` app requires **768MB** of **RAM** to run. The current limit of RAM available to Industrial Edge applications on WinCC Unified Panels devices is 768MB and for this reason no other Edge application can be running in parallel with the ```edge-node-red-smb-unified``` application.
+- The ```nodered_smb_fs_mail_sql``` app requires an active and properly configured **WinCC Unified project** present on the WinCC Unified Panel device. For details on how to integrate the ```edge-node-red-smb-unified``` app into a new WinCC Unified project see chapter [WinCC Unified Configuration](#wincc-unified-configuration).
+- WinCC Unified and the ```nodered_smb_fs_mail_sql``` app require to use the Engineering software **TIA Portal V17** - [SIOS download link](https://support.industry.siemens.com/cs/document/109784440/simatic-step-7-incl-safety-s7-plcsim-and-wincc-v17-trial-download?dti=0&lc=en-IT).
 - Firmware update v17 is required to be installed on the WinCC Unified Panel - [SIOS download link](https://support.industry.siemens.com/cs/document/109746530/image-downloads-for-hmi-operator-panels?dti=0&lc=en-IT).
 
 ## Node-RED App
 
-The **edge-node-red-smb-unified** app can be downloaded in .app format using this secure Google Drive link:
+The **nodered_smb_fs_mail_sql** app can be downloaded in .app format using this secure Google Drive link:
 
 - [nodered_smb_fs_mail_sql_0.0.2.app](https://drive.google.com/file/d/1TYT7yPRI0MrYukRMP_Ow2mhf7BDyh8UQ/view?usp=sharing)
 
@@ -54,7 +54,7 @@ The **edge-node-red-smb-unified** app can be downloaded in .app format using thi
 
 To load the app on Unified Comfort Panels:
 
-1. Copy the downloaded ```edge-node-red-smb-unified_x.x.x.app``` file to your Developer PC.
+1. Copy the downloaded ```nodered_smb_fs_mail_sql_x.x.x.app``` file to your Developer PC.
 2. Open the Industrial Edge Management Web Page of UCP on ```https://<ucp-address>```.
 3. Import the .app file using the *Import Offline* button.
 
@@ -70,7 +70,7 @@ To load the app on Unified Comfort Panels:
 
 Once the app has been installed the Docker service starts running immediately.
 
-You can access the app web interface by clicking on the *edge-node-red-smb-unified* app icon in Edge Device Web Page or through endpoint.
+You can access the app web interface by clicking on the *nodered_smb_fs_mail_sql* app icon in Edge Device Web Page or through endpoint.
 The app has two HTTPS Endpoints configured with SIMATIC Edge Reverse Proxy function:
 
 - ```https://<ied-address>/edge-node-red``` : this endpoint opens up the Node-RED editor interface. This is the default endpoint.
