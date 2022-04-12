@@ -48,7 +48,7 @@ In order to run this Edge App, the selected Edge System need to satisfy the foll
 
 The **edge-node-red-smb-unified** app can be downloaded in .app format using this secure Google Drive link:
 
-- [edge-node-red-smb-unified_0.0.1.app](https://drive.google.com/file/d/1xPnGRFFIac4HN3iM4opUpG5qIC1rrSgs/view?usp=sharing)
+- [nodered_smb_fs_mail_sql_0.0.2.app](https://drive.google.com/file/d/1TYT7yPRI0MrYukRMP_Ow2mhf7BDyh8UQ/view?usp=sharing)
 
 ### App download and installation
 
